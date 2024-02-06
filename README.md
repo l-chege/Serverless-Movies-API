@@ -1,9 +1,9 @@
-# Serverless Movies API
+# Serverless Movies API Project
 ## Overview
 
 This project implements a serverless API for retrieving movie information using Azure Functions, Azure Cosmos DB, Azure Blob Storage, and integration with OpenAI GPT-3 for movie summaries.
 
-## Components
+## Features
 
 - **Azure Functions:**
   - Serverless compute service for handling HTTP requests.
