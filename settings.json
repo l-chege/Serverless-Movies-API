@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "",
+      "FUNCTIONS_WORKER_RUNTIME": "python",
+      "COSMOSDB_CONNECTION_STRING": "AccountEndpoint=https://movies10db.documents.azure.com:443/;AccountKey=zq1otIGewbVkrErNAxrJk6sPCxRouQHZBIuHA1IzaiRXrYN48UPDkQf2gM6OdiiQiyyWyDmqKhlHACDbTKDsMQ==",
+      "COSMOSDB_DATABASE_NAME": "<your-database-name>",
+      "COSMOSDB_CONTAINER_NAME": "<your-container-name>",
+    "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=storemovies;AccountKey=NCFBC3BB3P7zfp0mFd3n87G192DdFhaB9CluSb0m9rXYPgt0/WjTL9nWzqGnnsWDEMbxHJU/dvxG+ASt8/abWg==",
+      "AZURE_STORAGE_CONTAINER_NAME": "blobmovies",
+      "OPENAI_API_KEY": "<your-api-key>"
+    }
+  }
+  
