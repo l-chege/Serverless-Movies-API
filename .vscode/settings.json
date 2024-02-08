@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+      "AzureWebJobsStorage": "",
+      "FUNCTIONS_WORKER_RUNTIME": "python",
+      "COSMOSDB_CONNECTION_STRING": "AccountEndpoint=;AccountKey=",
+      "COSMOSDB_DATABASE_NAME": "<your-database-name>",
+      "COSMOSDB_CONTAINER_NAME": "<your-container-name>",
+    "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=storemovies;AccountKey=",
+      "AZURE_STORAGE_CONTAINER_NAME": "blobmovies",
+      "OPENAI_API_KEY": "<your-api-key>"
+    }
+  }
+  
