@@ -1,3 +1,5 @@
+#serverless function implementation using Flask and Azure Cosmos DB and Blob Storage
+
 import os
 import json
 from flask import Flask, request
