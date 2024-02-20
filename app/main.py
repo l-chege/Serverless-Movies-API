@@ -17,8 +17,8 @@ container = database.get_container_client(os.environ['COSMOSDB_CONTAINER_NAME'])
 blob_service_client = BlobServiceClient.from_connection_string(os.environ['AZURE_STORAGE_CONNECTION_STRING'])
 blob_container_client = blob_service_client.get_container_client(os.environ['AZURE_STORAGE_CONTAINER_NAME'])
 
-#setup openai GPT-3 (optional)
-openai.api_key - os.environ['OPENAI_API_KEY']
+#setup OpenAI GPT-3 (optional)
+openai.api_key = os.environ['OPENAI_API_KEY']
 
 #get all movies
 @app.route('/api/movies', methods=['GET'])
@@ -52,7 +52,10 @@ def get_movie_cover(movie_id):
 def get_movie_summary(movie_id):
     movie = container.read_item(item=movie_id)
     prompt = f"Create the movie summary of '{movie['title']}' released in '{movie['year']}' of the genre {movie['genre']}."
-    response = openai.Completion.create(engine="text-davinci-002", prompt=prompt, max_tokens=150)
+    response = openai.Completion.create(
+        engine="text-davinci-002", 
+        prompt=prompt, 
+        max_tokens=150)
     return json.dumps({"summary": response['choices'][0]['text']})
 
 if __name__ == "__main__":
